@@ -24,9 +24,9 @@ Copyright 2011  Jay Zawrotny  (email: jayzawrotny@gmail.com)
 
 */
 
-if( ! class_exists( 'XG_VanillaLogin' ) )
+if( ! class_exists( 'XS_VanillaLogin' ) )
 {
-	class XG_VanillaLogin
+	class XS_VanillaLogin
 	{
 		var $cookie = array();
 		var $volatile = array();
@@ -37,7 +37,7 @@ if( ! class_exists( 'XG_VanillaLogin' ) )
 		const VCOOKIE_PATH = '/';
 		
 
-		function XG_VanillaLogin()
+		function XS_VanillaLogin()
 		{
 			$this->cookie = explode( "|", $_COOKIE[self::VCOOKIE_NAME] );
 			$this->volatile = explode( "|", $_COOKIE[self::VCOOKIE_NAME . '-Volatile'] );
@@ -136,15 +136,15 @@ if( ! class_exists( 'XG_VanillaLogin' ) )
 	}
 }
 
-if( class_exists( 'XG_VanillaLogin' ) )
+if( class_exists( 'XS_VanillaLogin' ) )
 {
-	$xglogin = new XG_VanillaLogin();
+	$xglogin = new XS_VanillaLogin();
 }
 
 /*
-if( ! function_exists( 'XG_SetupPage' ) )
+if( ! function_exists( 'XS_SetupPage' ) )
 {
-	function XG_SetupPage()
+	function XS_SetupPage()
 	{
 		global $xgimporter;
 
@@ -153,7 +153,7 @@ if( ! function_exists( 'XG_SetupPage' ) )
 }
 if (isset($xgimporter)) {
 	//Actions
-	add_action('admin_menu', 'XG_SetupPage');
+	add_action('admin_menu', 'XS_SetupPage');
 }
  */
 ?>

@@ -1,0 +1,1 @@
+This plugin allows you to use your vanilla forums' login data to get the logged in user's profile information along with verifying their login status and cookie data. Most the functions in this file are just ported from the files within Vanilla Forums' Garden Framework files.

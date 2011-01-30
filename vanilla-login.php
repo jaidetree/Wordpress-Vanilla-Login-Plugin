@@ -141,19 +141,4 @@ if( class_exists( 'XS_VanillaLogin' ) )
 	$xglogin = new XS_VanillaLogin();
 }
 
-/*
-if( ! function_exists( 'XS_SetupPage' ) )
-{
-	function XS_SetupPage()
-	{
-		global $xgimporter;
-
-		add_management_page( 'XG Import', 'XG Import', 9, basename(__FILE__), array( &$xgimporter, 'showAdminPage' ) );
-	}
-}
-if (isset($xgimporter)) {
-	//Actions
-	add_action('admin_menu', 'XS_SetupPage');
-}
- */
 ?>
